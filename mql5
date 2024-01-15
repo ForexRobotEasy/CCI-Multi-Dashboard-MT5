@@ -1,0 +1,103 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                             CCI Multi Dashboard |
+//|                                    Developer: Forex Robot Easy Team |
+//|                                             Website: forexroboteasy.com |
+//+------------------------------------------------------------------+
+
+#property copyright 'Forex Robot Easy Team'
+#property link      'forexroboteasy.com'
+
+//+------------------------------------------------------------------+
+//| Custom indicator initialization function                         |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+   // Add code for initializing the indicator
+   return(INIT_SUCCEEDED);
+}
+
+//+------------------------------------------------------------------+
+//| Custom indicator iteration function                              |
+//+------------------------------------------------------------------+
+int OnCalculate(const int rates_total,
+                const int prev_calculated,
+                const datetime &time[],
+                const double &open[],
+                const double &high[],
+                const double &low[],
+                const double &close[],
+                const long &tick_volume[],
+                const long &volume[],
+                const int &spread[])
+{
+   // Add code for calculating and displaying CCI values on the dashboard for each symbol and timeframe
+   return(rates_total);
+}
+
+//+------------------------------------------------------------------+
+//| Custom indicator deinitialization function                       |
+//+------------------------------------------------------------------+
+void OnDeinit(const int reason)
+{
+   // Add code for deinitializing the indicator
+}
+
+//+------------------------------------------------------------------+
+//| Custom indicator properties                                      |
+//+------------------------------------------------------------------+
+string GetIndicatorName()
+{
+   return 'CCI Multi Dashboard';
+}
+
+string GetIndicatorAuthor()
+{
+   return 'Forex Robot Easy Team';
+}
+
+string GetIndicatorWebsite()
+{
+   return 'forexroboteasy.com';
+}
+
+string GetIndicatorDescription()
+{
+   return 'This indicator allows multi-symbol and multi-timeframe functionality, displaying CCI values on a dashboard.';
+}
+
+string GetIndicatorVersion()
+{
+   return '1.0';
+}
+
+string GetIndicatorSettings()
+{
+   return 'Specify the period for calculating the CCI values';
+}
+
+string GetIndicatorCompatibility()
+{
+   return 'MT5 Trading Platform';
+}
+
+string GetIndicatorUsage()
+{
+   return 'Install the indicator on a chart, configure the settings, and monitor the CCI values on the dashboard.';
+}
+
+string GetIndicatorSupport()
+{
+   return 'Support and updates provided by Forex Robot Easy Team';
+}
+
+//+------------------------------------------------------------------+
+//| Custom indicator chart event function                            |
+//+------------------------------------------------------------------+
+void OnChartEvent(const int id,
+                  const long &lparam,
+                  const double &dparam,
+                  const string &sparam)
+{
+   // Add code for handling chart events
+}
